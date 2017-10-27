@@ -31,13 +31,15 @@ func main() {
 	var a = math.Pi
 	fmt.Println(a)
 
-	var map1 = make(map[string]int) //key is string,value is int
+	map1 := make(map[string]int) //key is string,value is int
 	map1["key1"] = 2
 	var map2 = map[string]int{
 		"key1":1,
 		"key2":32,
 	}
 	fmt.Println(map1,map2)
+	valueTest,isExist := map2["key2"]
+	fmt.Println(isExist,valueTest)
 
 }
 
