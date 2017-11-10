@@ -46,8 +46,10 @@ func main() {
 	defer func() {
 		fmt.Println("Fuck-2")
 	}()
+	fmt.Println("Hello World! 2 ")
 
 	f()
+	fmt.Println("Hello World! 3")
 
 	defer func() {
 		fmt.Println("Fuck-3")
