@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sync"
+)
 
 func f()  {
 	defer func() {
@@ -54,7 +57,5 @@ func main() {
 	defer func() {
 		fmt.Println("Fuck-3")
 	}()
-
-
 
 }
