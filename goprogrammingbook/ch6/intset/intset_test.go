@@ -3,9 +3,11 @@
 
 package intset
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func Example_one() {
+func Example_One() {
 	//!+main
 	var x, y IntSet
 	x.Add(1)
